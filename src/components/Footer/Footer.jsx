@@ -30,7 +30,7 @@ export const Footer = () => {
 		</span>
 		</div>
 		<Link to="/" style={{ textDecoration: 'none' }}> 
-      <img src={mrami} alt="logo" className="navbar_logo" />
+      <img src={mrami} alt="logo" className="footer_logo" />
       </Link>
     </div>
   )

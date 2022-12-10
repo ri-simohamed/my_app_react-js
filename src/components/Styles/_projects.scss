@@ -7,6 +7,56 @@
 }
 
 .projects{
-    background: silver;
-    width: 100%;
+    background: $light;
+
+    &_container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+        justify-items: center;
+        padding-bottom: 2rem;
+
+        h1 {
+            color: crimson;
+            text-align: center;
+            align-items: center;
+            @extend %aline-center;
+            margin-top: 5px;
+        }
+
+        @include tablet {
+            grid-template-columns: 2fr;
+            // height: 100%;
+            margin-bottom: 15px;
+            padding-bottom: 2rem;
+          }
+          #shadow{
+            margin: 25px;
+            width: 390px;
+            height: 230px;
+            color: #fff;
+            background-color: #111;
+            text-align: center;
+            cursor: pointer;
+
+            @include tablet {
+                margin: 5px;
+                width: 290px;
+                height: 290px;
+            }
+
+            &:hover {
+                background: $orange;
+                color: $light;
+            }
+        }
+        &_img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+    }
 }

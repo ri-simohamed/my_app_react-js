@@ -1,18 +1,28 @@
-import React from 'react'
-import line from "../images/line.jpeg"
+import React from "react";
 
 export const Projects = () => {
   return (
     <div className="projects">
       <div className="projects_container">
-        <div className="projects_container_top">
-          <h1>My List Projects</h1>
-          <img src={line} alt="" className="projects_container_top_lineimg" />
+        <h1>My List Projects</h1>
+        <hr/>
+        <div className="shadow p-3 mb-5 rounded" id="shadow">
+            <img src="/" alt="" className="projects_container_img" />
+            <h2>First project</h2>
         </div>
-        <div className="projects_container_center">
-          
+        <div className="shadow p-3 mb-5 rounded" id="shadow">
+          <img src="/" alt="" className="projects_container_img" />
+          <h2>Second project</h2>
+        </div>
+        <div className="shadow p-3 mb-5 rounded" id="shadow">
+          <img src="/" alt="" className="projects_container_img" />
+          <h2>Thrid project</h2>
+        </div>
+        <div className="shadow p-3 mb-5 rounded" id="shadow">
+          <img src="/" alt="" className="projects_container_img" />
+          <h2>Quoiter project</h2>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

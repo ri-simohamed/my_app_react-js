@@ -23,7 +23,7 @@ export const Home = () => {
             type="email"
             className="hero_contact_input"
           />
-          <input placeholder="Your Massege ?" className="hero_contact_input" />
+          <input placeholder="Your Massege ?" className="hero_contact_message"/>
           <button className="hero_container_btn">send</button>
         </div>
       </div>
