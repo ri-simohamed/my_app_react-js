@@ -9,16 +9,16 @@ export const Footer = () => {
     <div className='footer'>
         <ul className="footer_media">
           <li className="footer_media_icons">
-			<a href=''><BsFacebook/></a>
+			<a href='/'><BsFacebook/></a>
           </li>
           <li className="footer_media_icons">
-            <a href=''><BsInstagram/></a>
+            <a href='/'><BsInstagram/></a>
           </li>
           <li className="footer_media_icons">
             <a href='https://www.linkedin.com/in/mohamed-rami-18a472216/'><BsLinkedin/></a>
           </li>
           <li className="footer_media_icons">
-            <a href=''><BsTwitter/></a>
+            <a href='/'><BsTwitter/></a>
           </li>
 		  <li className="footer_media_icons">
             <a href='https://github.com/ri-simohamed'><BsGithub/></a>

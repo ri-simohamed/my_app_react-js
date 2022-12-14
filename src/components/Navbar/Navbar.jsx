@@ -8,9 +8,9 @@ export const Navbar = () => {
 
   const [toggle, setToggle] = useState(false);
 
- const handleClickbut = () => {
-        console.log("hello");
-  }
+//  const handleClickbut = () => {
+//         console.log("hello");
+//   }
 
   return (
     <>

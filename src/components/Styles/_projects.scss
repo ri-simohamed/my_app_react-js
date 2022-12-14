@@ -1,62 +1,100 @@
 @import 'color';
 @import 'media-queries';
 
-%aline-center {
-    display: flex;
-    align-items: center;
-}
-
-.projects{
-    background: $light;
+.projects {
+    background-color: $blue-s;
+    // height: 90vh;
+    // height: 100%;
 
     &_container {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        align-items: center;
-        justify-items: center;
-        padding-bottom: 2rem;
-
-        h1 {
-            color: crimson;
-            text-align: center;
-            align-items: center;
-            @extend %aline-center;
-            margin-top: 5px;
-        }
+        display: flex;
+        
 
         @include tablet {
-            grid-template-columns: 2fr;
-            // height: 100%;
-            margin-bottom: 15px;
-            padding-bottom: 2rem;
-          }
-          #shadow{
-            margin: 25px;
-            width: 390px;
-            height: 230px;
-            color: #fff;
-            background-color: #111;
-            text-align: center;
-            cursor: pointer;
+            display: block;
+        }
 
-            @include tablet {
-                margin: 5px;
-                width: 290px;
-                height: 290px;
+        &_left {
+            flex: 30%;
+            padding: 2rem;
+            border: 4px solid #fff;
+            
+            span {
+                color: crimson;
             }
 
-            &:hover {
-                background: $orange;
-                color: $light;
+            &_img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                text-align: center;
+                margin-left: 4rem;
+                padding: 2rem;
+                cursor: pointer;
+
+                @include tablet {
+                    margin: auto;
+                }
             }
         }
-        &_img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
+
+        &_right {
+            flex: 70%;
+            padding: 2rem;
+
+            h1 {
+                text-align: center;
+                color: $salamon;
+                font-size: 22px;
+            }
+
+            &_row {
+                margin: auto;
+                height: 100%;
+                display: flex;
+
+                @include tablet {
+                    display: block;
+                }
+
+                &_content {
+                    background-color: $silver;
+                    width: 100%;
+                    // height: 90vh;
+                    margin: 2px;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $salamon;
+                    }
+
+                    @include tablet {
+                        background-color: $silver;
+                        border-radius: 15px;
+                    }
+
+                   &_img {
+                    background-color: #fff;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                   }
+
+                   &_git-icon {
+                    color: $dark;
+                    width: 50%;
+                    height: 10%;
+                    margin: auto;
+
+                    @include tablet {
+                        width: 20px;
+                        height: 20px;
+                    }
+                   }
+                }
+            }
+            
         }
     }
 }

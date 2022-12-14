@@ -17,6 +17,7 @@ export const Home = () => {
           </div>
         </div>
         <div className="hero_contact">
+          <h1>Contact Me.</h1>
           <input placeholder="Your Name ?" className="hero_contact_input" />
           <input
             placeholder="Your Email ?"
